@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>235th BarberStreet RBX - Barbier à Roubaix</title>
+    <meta name="description" content="235th BarberStreet RBX, votre barbier de référence à Roubaix. Coupe, barbe, style dans une ambiance unique.">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">235TH BARBERSTREET</a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#accueil" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="#apropos" class="nav__link">À Propos</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#galerie" class="nav__link">Galerie</a></li>
+                    <li class="nav__item"><a href="#avis" class="nav__link">Avis</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <!-- Ce lien sera visible UNIQUEMENT dans le menu mobile ouvert -->
+                    <li class="nav__item"><a href="reservation.html" class="nav__link nav__link--cta">Réserver</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+
+
+            
+            <!-- Le toggle (hamburger) sera visible UNIQUEMENT sur Mobile -->
+            <div class="nav__toggle" id="nav-toggle"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="hero" id="accueil">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">235TH BARBERSTREET</h1>
+                    <p class="hero__subtitle">Votre style, notre passion</p>
+                    <p class="hero__description">L'art du barbier moderne dans un cadre authentique à Roubaix</p>
+                    <div class="hero__buttons">
+                        <a href="reservation.html" class="button button--primary">Prendre rendez-vous</a>
+                        <a href="#services" class="button button--secondary">Nos services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== À PROPOS ==================== -->
+        <section class="about section" id="apropos">
+            <h2 class="section__title">Bienvenue chez 235th BarberStreet</h2>
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h3 class="about__subtitle">L'Excellence du Barbier Moderne</h3>
+                    <p class="about__description">
+                        Situé au cœur de Roubaix, 235th BarberStreet est bien plus qu'un simple salon de coiffure. 
+                        C'est un espace dédié à l'homme moderne qui prend soin de son apparence.
+                    </p>
+                    <p class="about__description">
+                        Notre équipe de barbiers passionnés combine techniques traditionnelles et tendances contemporaines 
+                        pour vous offrir une expérience unique. Ambiance chaleureuse, décor soigné avec nos murs en bois 
+                        et nos touches turquoise, nous avons créé un lieu où style rime avec confort.
+                    </p>
+                    
+                    <div class="about__features">
+                        <div class="feature">
+                            <i class="fa-solid fa-scissors"></i>
+                            <h4>Expertise Reconnue</h4>
+                            <p>Barbiers qualifiés et expérimentés</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa-solid fa-star"></i>
+                            <h4>Produits Premium</h4>
+                            <p>Sélection de produits haut de gamme</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa-solid fa-clock"></i>
+                            <h4>Sur Rendez-vous</h4>
+                            <p>Service personnalisé sans attente</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa-solid fa-spray-can"></i>
+                            <h4>Ambiance Unique</h4>
+                            <p>Cadre moderne et chaleureux</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about__image">
+                    <img src="image/salon-interieur.jpg" alt="Intérieur du salon 235th BarberStreet" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SERVICES ==================== -->
+        <section class="services section" id="services">
+            <h2 class="section__title">Nos Prestations</h2>
+            <div class="services__container container grid">
+                
+                <div class="service__card">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <h3 class="service__title">Coupe Homme</h3>
+                    <p class="service__description">
+                        Coupe personnalisée adaptée à votre style et morphologie. 
+                        Shampoing, coupe et coiffage inclus.
+                    </p>
+                    <span class="service__price">À partir de 25€</span>
+                </div>
+
+                <div class="service__card service__card--featured">
+                    <div class="service__badge">POPULAIRE</div>
+                    <div class="service__icon">
+                        <i class="fa-solid fa-cut"></i>
+                    </div>
+                    <h3 class="service__title">Coupe + Barbe</h3>
+                    <p class="service__description">
+                        Le combo parfait : coupe sur-mesure + taille et entretien complet de la barbe.
+                        Serviette chaude et produits de soin inclus.
+                    </p>
+                    <span class="service__price">À partir de 40€</span>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="service__title">Taille de Barbe</h3>
+                    <p class="service__description">
+                        Entretien et stylisation de votre barbe. Contours précis, 
+                        serviette chaude, huiles et baumes.
+                    </p>
+                    <span class="service__price">À partir de 18€</span>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-child"></i>
+                    </div>
+                    <h3 class="service__title">Coupe Enfant</h3>
+                    <p class="service__description">
+                        Coupe adaptée pour les enfants jusqu'à 12 ans. 
+                        Ambiance détendue et résultat soigné.
+                    </p>
+                    <span class="service__price">À partir de 20€</span>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <h3 class="service__title">Dégradé à Blanc</h3>
+                    <p class="service__description">
+                        Dégradé progressif jusqu'à la peau pour un look net et moderne. 
+                        Technique de précision.
+                    </p>
+                    <span class="service__price">Inclus dans la coupe</span>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service__title">Dessin & Traits</h3>
+                    <p class="service__description">
+                        Motifs personnalisés et traits design pour un style unique. 
+                        Précision garantie.
+                    </p>
+                    <span class="service__price">Sur devis</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== GALERIE ==================== -->
+        <section class="gallery section" id="galerie">
+            <h2 class="section__title">Notre Savoir-Faire</h2>
+            <div class="gallery__container container grid">
+                <div class="gallery__item">
+                    <img src="image/coupe1.jpg" alt="Coupe dégradé moderne" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Dégradé progressif</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <img src="image/coupe2.jpg" alt="Style avec barbe" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Coupe + Barbe</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <img src="image/coupe3.jpg" alt="Dégradé à blanc" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Dégradé à blanc</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <img src="image/coupe4.jpg" alt="Trait design" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Design & Traits</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <img src="image/coupe5.jpg" alt="Style classique" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Style classique</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <img src="image/coupe6.jpg" alt="Coupe enfant" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Coupe enfant</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== AVIS CLIENTS ==================== -->
+        <section class="testimonials section" id="avis">
+            <h2 class="section__title">Ils nous font confiance</h2>
+            <div class="testimonials__container container grid">
+                
+                <div class="testimonial__card">
+                    <div class="testimonial__stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial__text">
+                        "Excellent barbier, travail soigné et ambiance au top. 
+                        Le salon est vraiment stylé avec sa déco moderne. Je recommande !"
+                    </p>
+                    <h4 class="testimonial__name">Karim M.</h4>
+                    <span class="testimonial__source">Avis Google</span>
+                </div>
+
+                <div class="testimonial__card">
+                    <div class="testimonial__stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial__text">
+                        "Meilleur barbier de Roubaix sans hésiter. Professionnel, 
+                        à l'écoute et toujours un résultat impeccable."
+                    </p>
+                    <h4 class="testimonial__name">Thomas B.</h4>
+                    <span class="testimonial__source">Avis Facebook</span>
+                </div>
+
+                <div class="testimonial__card">
+                    <div class="testimonial__stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial__text">
+                        "Super expérience ! L'équipe est accueillante, le lieu est propre 
+                        et moderne. Mon fils adore y aller aussi !"
+                    </p>
+                    <h4 class="testimonial__name">Rachid A.</h4>
+                    <span class="testimonial__source">Avis Google</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT ==================== -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Nous Trouver</h2>
+            <div class="contact__container container grid">
+                
+                <div class="contact__info">
+                    <h3>Informations Pratiques</h3>
+                    
+                    <div class="contact__item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>235 Rue du Barbier<br>59100 Roubaix</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p><a href="tel:0320000000">03 20 00 00 00</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Mardi - Samedi : 9h00 - 19h00<br>Dimanche - Lundi : Fermé</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__socials">
+                        <h4>Suivez-nous</h4>
+                        <div class="social__links">
+                            <!-- REMPLACER LES URLS PAR LES VRAIES ADRESSES -->
+                            <a href="https://www.instagram.com/votrenom/" target="_blank" title="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/votrenom/" target="_blank" title="Facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@votrenom/" target="_blank" title="TikTok">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.47353912187!2d3.172080677134887!3d50.69429497164175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c328e70528248d%3A0x28f73a5f57371c6d!2sRoubaix!5e0!3m2!1sfr!2sfr!4v1694553255581!5m2!1sfr!2sfr" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            
+            <div class="footer__brand">
+                <a href="#" class="footer__logo">235TH BARBERSTREET</a>
+                <p class="footer__tagline">Votre style, notre passion</p>
+                <div class="footer__socials">
+                    <!-- REMPLACER LES URLS PAR LES VRAIES ADRESSES -->
+                    <a href="https://www.instagram.com/votrenom/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/votrenom/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@votrenom/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#apropos">À Propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#avis">Avis</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__contact">
+                <h4>Contact</h4>
+                <p>235 Rue du Barbier<br>59100 Roubaix</p>
+                <p>Tél : 03 20 00 00 00</p>
+                <a href="reservation.html" class="button button--footer button--cta">Réserver</a>
+            </div>
+
+        </div>
+        
+        <div class="footer__copy">
+            <p>&copy; 2025 235th BarberStreet RBX. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        // Menu mobile
+        const navMenu = document.getElementById('nav-menu');
+        const navToggle = document.getElementById('nav-toggle');
+        const navClose = document.getElementById('nav-close');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.add('show-menu');
+            });
+        }
+
+        if (navClose) {
+            navClose.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            });
+        }
+
+        // Fermer le menu au clic sur un lien
+        const navLinks = document.querySelectorAll('.nav__link');
+        function linkAction() {
+            navMenu.classList.remove('show-menu');
+        }
+        navLinks.forEach(n => n.addEventListener('click', linkAction));
+
+        // Header avec scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY >= 50) {
+                header.classList.add('scroll-header');
+            } else {
+                header.classList.remove('scroll-header');
+            }
+        });
+
+        // --- Animation des éléments au scroll (AJOUT) ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                } else {
+                    // Optionnel: si vous voulez que l'animation se réinitialise au scroll vers le haut
+                    // entry.target.classList.remove('animate');
+                }
+            });
+        }, {
+            threshold: 0.1 // Déclenche quand 10% de l'élément est visible
+        });
+
+        // Cibler les éléments que vous voulez animer
+        document.querySelectorAll('.about__image, .service__card, .gallery__item, .testimonial__card, .contact__info, .contact__map').forEach(item => {
+            item.classList.add('scroll-animate'); // Classe pour que l'observer le trouve
+            observer.observe(item);
+        });
+
+        // Animation spécifique pour l'image de la section About
+        document.querySelectorAll('.about__image').forEach(img => {
+            img.classList.add('scroll-animate-img');
+            observer.observe(img);
+        });
+    </script>
+</body>
+</html>

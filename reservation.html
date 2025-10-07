@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - 235th BarberStreet RBX</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reservation.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== PAGE DE RÉSERVATION ==================== -->
+    <main class="booking-page">
+        <div class="booking__wrapper">
+            
+            <div class="booking__header">
+                <!-- Bouton retour stylisé comme un bouton secondaire -->
+                <a href="index.html" class="button button--secondary back-link">
+                    <i class="fa-solid fa-arrow-left"></i> Retour au site
+                </a>
+                <h1 class="booking__title">Réservez votre rendez-vous</h1>
+                <p class="booking__subtitle">Remplissez le formulaire ci-dessous, nous vous confirmerons votre créneau rapidement</p>
+            </div>
+
+            <div class="booking__container">
+                
+                <!-- Formulaire -->
+                <form class="booking__form" id="bookingForm" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+                    
+                    <div class="form__section">
+                        <h3 class="form__section-title">
+                            <i class="fa-solid fa-user"></i> Vos informations
+                        </h3>
+                        
+                        <div class="form__grid">
+                            <div class="form__group">
+                                <label for="firstName" class="form__label">Prénom *</label>
+                                <input type="text" id="firstName" name="firstName" class="form__input" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="lastName" class="form__label">Nom *</label>
+                                <input type="text" id="lastName" name="lastName" class="form__input" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="phone" class="form__label">Téléphone *</label>
+                                <input type="tel" id="phone" name="phone" class="form__input" placeholder="06 12 34 56 78" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email</label>
+                                <input type="email" id="email" name="email" class="form__input" placeholder="votre@email.fr">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__section">
+                        <h3 class="form__section-title">
+                            <i class="fa-solid fa-scissors"></i> Votre prestation
+                        </h3>
+                        
+                        <div class="form__grid">
+                            <div class="form__group form__group--full">
+                                <label for="service" class="form__label">Service souhaité *</label>
+                                <select id="service" name="service" class="form__select" required>
+                                    <option value="">Choisissez un service</option>
+                                    <option value="coupe-homme">Coupe Homme - À partir de 25€</option>
+                                    <option value="coupe-barbe">Coupe + Barbe - À partir de 40€</option>
+                                    <option value="barbe">Taille de Barbe - À partir de 18€</option>
+                                    <option value="coupe-enfant">Coupe Enfant (-12 ans) - À partir de 20€</option>
+                                    <option value="degrade-blanc">Dégradé à Blanc - Inclus</option>
+                                    <option value="dessin">Dessin & Traits - Sur devis</option>
+                                </select>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="date" class="form__label">Date souhaitée *</label>
+                                <input type="date" id="date" name="date" class="form__input" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="time" class="form__label">Heure préférée *</label>
+                                <select id="time" name="time" class="form__select" required>
+                                    <option value="">Choisir un créneau</option>
+                                    <option value="09:00">09h00</option>
+                                    <option value="09:30">09h30</option>
+                                    <option value="10:00">10h00</option>
+                                    <option value="10:30">10h30</option>
+                                    <option value="11:00">11h00</option>
+                                    <option value="11:30">11h30</option>
+                                    <option value="12:00">12h00</option>
+                                    <option value="14:00">14h00</option>
+                                    <option value="14:30">14h30</option>
+                                    <option value="15:00">15h00</option>
+                                    <option value="15:30">15h30</option>
+                                    <option value="16:00">16h00</option>
+                                    <option value="16:30">16h30</option>
+                                    <option value="17:00">17h00</option>
+                                    <option value="17:30">17h30</option>
+                                    <option value="18:00">18h00</option>
+                                    <option value="18:30">18h30</option>
+                                </select>
+                            </div>
+
+                            <div class="form__group form__group--full">
+                                <label for="barber" class="form__label">Barbier préféré (optionnel)</label>
+                                <select id="barber" name="barber" class="form__select">
+                                    <option value="">Pas de préférence</option>
+                                    <option value="barbier1">Premier barbier</option>
+                                    <option value="barbier2">Deuxième barbier</option>
+                                    <option value="barbier3">Troisième barbier</option>
+                                </select>
+                            </div>
+
+                            <div class="form__group form__group--full">
+                                <label for="message" class="form__label">Message (optionnel)</label>
+                                <textarea id="message" name="message" class="form__textarea" rows="4" placeholder="Précisez vos souhaits ou demandes particulières..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="button button--submit">
+                        <i class="fa-solid fa-calendar-check"></i> Confirmer la réservation
+                    </button>
+                </form>
+
+                <!-- Informations complémentaires -->
+                <aside class="booking__info">
+                    <div class="info__card">
+                        <i class="fa-solid fa-info-circle"></i>
+                        <div class="info__content">
+                            <h4>Informations importantes</h4>
+                            <ul>
+                                <li><strong>Confirmation :</strong> Vous recevrez un SMS de confirmation sous 2h.</li>
+                                <li><strong>Annulation :</strong> Merci de nous prévenir au moins 2h à l'avance.</li>
+                                <li><strong>Retard :</strong> Au-delà de 10 minutes, votre créneau peut être attribué.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info__card">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="info__content">
+                            <h4>Besoin d'aide ?</h4>
+                            <p>Contactez-nous au <a href="tel:0320000000">03 20 00 00 00</a></p>
+                            <p>Du mardi au samedi, 9h-19h</p>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ==================== MODAL DE CONFIRMATION ==================== -->
+    <div class="modal" id="confirmationModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="modalClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="modal__icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            
+            <h3 class="modal__title">Demande envoyée avec succès !</h3>
+            
+            <p class="modal__text">
+                Merci pour votre demande de rendez-vous.<br>
+                Nous vous confirmerons le créneau par SMS sous 2 heures.
+            </p>
+            
+            <button class="button button--modal" onclick="window.location.href='index.html'">
+                Retour à l'accueil
+            </button>
+        </div>
+    </div>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        // Configuration de la date minimum (demain) et maximum (3 mois)
+        function setMinDate() {
+            const dateInput = document.getElementById('date');
+            if (!dateInput) return;
+
+            const today = new Date();
+            const tomorrow = new Date(today);
+            tomorrow.setDate(today.getDate() + 1); // Commence à demain
+            dateInput.min = tomorrow.toISOString().split('T')[0]; // Format YYYY-MM-DD
+
+            const maxDate = new Date(today);
+            maxDate.setMonth(today.getMonth() + 3); // Jusqu'à 3 mois dans le futur
+            dateInput.max = maxDate.toISOString().split('T')[0]; // Format YYYY-MM-DD
+        }
+
+        // Validation de la date (pas de dimanche/lundi)
+        function validateDate() {
+            const dateInput = document.getElementById('date');
+            if (!dateInput || !dateInput.value) return true;
+
+            const selectedDate = new Date(dateInput.value);
+            const dayOfWeek = selectedDate.getUTCDay(); // 0 pour Dimanche, 6 pour Samedi
+
+            // Les jours fermés sont Dimanche (0) et Lundi (1)
+            if (dayOfWeek === 0 || dayOfWeek === 1) {
+                alert('Nous sommes fermés le dimanche et le lundi. Merci de choisir une autre date.');
+                dateInput.value = ''; // Réinitialise le champ date
+                return false;
+            }
+            return true;
+        }
+
+        // Gestion du formulaire
+        document.addEventListener('DOMContentLoaded', function() {
+            setMinDate(); // Appelle la fonction pour définir les dates min/max
+
+            const dateInput = document.getElementById('date');
+            if (dateInput) {
+                dateInput.addEventListener('change', validateDate); // Valide à chaque changement
+            }
+
+            const form = document.getElementById('bookingForm');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault(); // Empêche la soumission par défaut
+
+                    // Validation finale de la date avant de montrer la modal
+                    if (!validateDate()) {
+                        return; // Arrête la fonction si la date n'est pas valide
+                    }
+
+                    // Simuler l'envoi avec succès
+                    // Dans un vrai cas, on utiliserait fetch() ou XMLHttpRequest pour envoyer les données
+                    // et on afficherait la modal APRES confirmation d'envoi réussi.
+                    // Ici, on simule avec setTimeout.
+                    setTimeout(() => {
+                        showModal(); // Affiche la modal de confirmation
+                        form.reset(); // Réinitialise le formulaire
+                        setMinDate(); // Réapplique les dates min/max après reset
+                    }, 500); // Petit délai pour simuler l'envoi
+                });
+            }
+        });
+
+        // Afficher la modal
+        function showModal() {
+            const modal = document.getElementById('confirmationModal');
+            if (modal) {
+                modal.classList.add('show');
+            }
+        }
+
+        // Fermer la modal
+        const modalClose = document.getElementById('modalClose');
+        if (modalClose) {
+            modalClose.addEventListener('click', function() {
+                const modal = document.getElementById('confirmationModal');
+                modal.classList.remove('show');
+            });
+        }
+
+        // Fermer au clic sur l'overlay
+        const modal = document.getElementById('confirmationModal');
+        if (modal) {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('show');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
